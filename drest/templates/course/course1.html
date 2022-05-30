@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{cname}}</title>
 </head>
 <body>
 <h2>
-    Welcome to my course Gokul PATIL {{cname|upper|length}}
+    Welcome to my course Gokul PATIL {{cname|upper}}
+    <img src="{% static 'images/GLP.jpg'%}" height="300" width="400">
 </h2>
 </body>
 </html>
